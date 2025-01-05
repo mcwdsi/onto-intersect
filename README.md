@@ -17,6 +17,6 @@ Usage:
 # If current directory is not in your PATH environment variable
 ./onto-intersect.sh file-1.owl file-2.owl
 
-# If current director is in your PATH variable
+# If current directory is in your PATH variable
 onto-intersect.sh file-1.owl file-2.owl
 
