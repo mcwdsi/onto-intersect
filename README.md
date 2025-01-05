@@ -3,7 +3,7 @@ Given two OWL files as input, outputs all the classes and properties they have i
 
 It is a strict overlap: it bases what is in common on the IRIs themselves, and the IRIs only. It does not attempt any other kind of matching. For matching on labels and other annotations, use a different tool.
 
-The purpose of this script is purely to find what is exactly shared between two ontologies in terms of classes, object properties, and annotation properties.
+The purpose of this script is purely to find what is exactly shared between two ontologies in terms of classes, object properties, annotation properties, individuals, etc.
 
 The output is two OWL files: a ROBOT extract using a file of CURIEs from the first ontology file, and ROBOT extract using the same file of CURIEs from the second ontology.
 
