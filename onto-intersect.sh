@@ -16,6 +16,7 @@ grep "^Declaration" $f1.ofn | sort > $f1-declarations-sorted.txt
 grep "^Declaration" $f2.ofn | sort > $f2-declarations-sorted.txt
 
 # Get the common declarations between the two files. Note that we are assuming they use the same prefixes. A future enhancement could relax this assumption.
+# Note that because we're using declarations, if the two files declare a particular IRI to be different things (e.g. class vs. object property), we will not include it.
 comm -12 $f1-declarations-sorted.txt $f2-declarations-sorted.txt > $f1-$f2-intersection-declarations.tsv
 
 # Now filter the Declaration sections down to just CURIES and then pass that into sed twice, once to erase the obo: prefix, and once to replace the colon with an underscore.
