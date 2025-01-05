@@ -9,14 +9,14 @@ The output is two OWL files: a ROBOT extract using a file of CURIEs from the fir
 
 N.B. These two extracts will not necessarily be the same. First, the classes, properties, and even ontologies themselves can have different annotations on them. Second, the extract process, as called by the script, preserves the class and property hierachy, which can differ between the two ontologies.
 
-Setup:
+# Setup:
 Follow ROBOT tool installation instructions here: https://robot.obolibrary.org/
 chmod u+x onto-intersect.sh
 
-Usage:
-# If current directory is not in your PATH environment variable
+# Usage:
+## If current directory is not in your PATH environment variable
 ./onto-intersect.sh file-1.owl file-2.owl
 
-# If current directory is in your PATH variable
+## If current directory is in your PATH variable
 onto-intersect.sh file-1.owl file-2.owl
 
